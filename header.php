@@ -5,6 +5,7 @@
     <title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6930216/7915992/css/fonts.css" />
     <link rel="stylesheet" href="https://use.typekit.net/xwl8ehg.css">
 
@@ -22,7 +23,7 @@
 
       <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_field('logo', 'options') ?>"></a>
 
-      <div class="main-menu">
+      <div class="main-menu-container">
         <?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
       </div>
 

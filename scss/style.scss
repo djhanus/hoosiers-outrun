@@ -105,7 +105,7 @@ body {
     font-family: $main-sans;
     font-style: normal;
     font-weight: 800;
-    font-size: 32px;
+    font-size: 42px;
     margin: 15px 0px;
     color: black;
     font-weight: bold;
@@ -115,7 +115,7 @@ body {
     font-family: $main-sans;
     font-style: normal;
     font-weight: 800;
-    font-size: 28px;
+    font-size: 36px;
     margin: 15px 0px;
     color: black;
     font-weight: normal;
@@ -125,17 +125,17 @@ body {
     font-family: $serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 28px;
     margin: 15px 0px;
     color: black;
     font-weight: normal;
   }
 
-  h3 {
+  h4 {
     font-family: $serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 26px;
     margin: 15px 0px;
     color: black;
     font-weight: normal;
@@ -203,9 +203,11 @@ main {
 // CTA BUTTON
 .cta-button {
   background-color: $red;
-  padding: 5px 20px;
-  border-radius: 15px;
+  padding: 5px 35px;
+  border-radius: 17px;
   color: white;
+  line-height: 2;
+  text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 0.05em;
@@ -234,22 +236,23 @@ header {
     position: relative;
     display: flex;
     align-items: center;
+    width: 100%;
+
+    // LOGO
+    img {
+      width: 200px;
+      height: auto;
+      padding: 15px 10px;
+      margin: 0 0 0 25px;
+    }
   }
 
-  // LOGO
-  img {
-    width: 200px;
-    height: auto;
-    padding: 15px 10px;
-    margin: 0 0 0 25px;
-  }
-
-  .main-menu {
+  .main-menu-container {
     margin-left: auto;
 
     ul {
       display: inline-flex;
-      margin-right: 20px;
+      margin-right: 25px;
 
       li {
         a {
@@ -304,13 +307,10 @@ header {
       width: 50%;
 
       h1 {
-        font-size: 42px;
         color: $black;
       }
 
       p {
-        font-size: 18px;
-        line-height: 1.8;
         max-width: 500px;
       }
     }
@@ -348,22 +348,40 @@ header {
   }
 
   .closing-cta-section {
+    position: relative;
     width: 100%;
     background-color: white;
-    padding: 100px 50px;
+    padding: 50px;
     color: white;
     background-position: center;
     background-size: cover;
     overflow: auto;
     min-height: 450px;
 
+    &:before {
+      position: absolute;
+      content: '';
+      z-index: 1;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(50,50,50,.2);
+    }
+
     .container {
+      position: relative;
       width: 720px;
       margin: 0 auto;
       text-align: center;
+      padding-top: 100px;
+      z-index: 100;
 
       .title {
-        font-size: 36px;
+        font-size: 42px;
+        font-weight: bold;
         color: white;
         text-align: center;
         display: block;
@@ -381,20 +399,65 @@ footer {
   text-align: center;
   color: white;
 
+  .sponsors-section {
+    background-color: $tan;
+    overflow: auto;
+    padding: 25px;
+
+    .title {
+      font-size: 28px;
+      color: $navy;
+      line-height: 2;
+      font-weight: bold;
+      padding-bottom: 15px;
+    }
+
+
+    ul {
+      max-width: 1080px;
+      flex-wrap: wrap;
+      margin: 0 auto;
+
+      li {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0;
+        margin: 0;
+
+        img {
+          width: 150px;
+          height: auto;
+          padding: 20px 10px;
+        }
+      }
+    }
+  }
+
   .container {
     margin: 0 auto;
     padding: 50px;
 
+    .social-media {
+      padding: 10px 0;
+      a {
+        i {
+          color: $orange;
+          font-size: 36px;
+          padding: 0 5px;
+        }
+      }
+    }
+
     .title {
       text-align: center;
       font-size: 18px;
-      padding: 15px 0;
+      padding: 10px 0;
     }
 
     .copyright {
       text-align: center;
       font-size: 14px;
-      padding: 15px 0;
+      padding: 10px 0;
     }
   }
 } // END footer

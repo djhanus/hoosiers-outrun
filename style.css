@@ -90,7 +90,7 @@ body h1 {
   font-family: "Gotham A", "Gotham B", Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 32px;
+  font-size: 42px;
   margin: 15px 0px;
   color: black;
   font-weight: bold;
@@ -100,7 +100,7 @@ body h2 {
   font-family: "Gotham A", "Gotham B", Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 28px;
+  font-size: 36px;
   margin: 15px 0px;
   color: black;
   font-weight: normal;
@@ -110,17 +110,17 @@ body h3 {
   font-family: "athelas", Georgia, serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 28px;
   margin: 15px 0px;
   color: black;
   font-weight: normal;
 }
-html h3,
-body h3 {
+html h4,
+body h4 {
   font-family: "athelas", Georgia, serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 26px;
   margin: 15px 0px;
   color: black;
   font-weight: normal;
@@ -188,9 +188,11 @@ main {
 
 .cta-button {
   background-color: #EE5938;
-  padding: 5px 20px;
-  border-radius: 15px;
+  padding: 5px 35px;
+  border-radius: 17px;
   color: white;
+  line-height: 2;
+  text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 0.05em;
@@ -217,21 +219,22 @@ header .container {
   position: relative;
   display: flex;
   align-items: center;
+  width: 100%;
 }
-header img {
+header .container img {
   width: 200px;
   height: auto;
   padding: 15px 10px;
   margin: 0 0 0 25px;
 }
-header .main-menu {
+header .main-menu-container {
   margin-left: auto;
 }
-header .main-menu ul {
+header .main-menu-container ul {
   display: inline-flex;
-  margin-right: 20px;
+  margin-right: 25px;
 }
-header .main-menu ul li a {
+header .main-menu-container ul li a {
   font-family: "Gotham A", "Gotham B", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -244,7 +247,7 @@ header .main-menu ul li a {
   padding: 5px;
   margin: 0px 5px;
 }
-header .main-menu ul li a:hover {
+header .main-menu-container ul li a:hover {
   color: #EE5938;
 }
 
@@ -272,12 +275,9 @@ header .main-menu ul li a:hover {
   width: 50%;
 }
 #page-standard .intro-section .text h1 {
-  font-size: 42px;
   color: #03374A;
 }
 #page-standard .intro-section .text p {
-  font-size: 18px;
-  line-height: 1.8;
   max-width: 500px;
 }
 #page-standard .cta-section {
@@ -307,22 +307,39 @@ header .main-menu ul li a:hover {
   padding: 50px;
 }
 #page-standard .closing-cta-section {
+  position: relative;
   width: 100%;
   background-color: white;
-  padding: 100px 50px;
+  padding: 50px;
   color: white;
   background-position: center;
   background-size: cover;
   overflow: auto;
   min-height: 450px;
 }
+#page-standard .closing-cta-section:before {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(50, 50, 50, 0.2);
+}
 #page-standard .closing-cta-section .container {
+  position: relative;
   width: 720px;
   margin: 0 auto;
   text-align: center;
+  padding-top: 100px;
+  z-index: 100;
 }
 #page-standard .closing-cta-section .container .title {
-  font-size: 36px;
+  font-size: 42px;
+  font-weight: bold;
   color: white;
   text-align: center;
   display: block;
@@ -335,19 +352,55 @@ footer {
   text-align: center;
   color: white;
 }
+footer .sponsors-section {
+  background-color: #F2E5CB;
+  overflow: auto;
+  padding: 25px;
+}
+footer .sponsors-section .title {
+  font-size: 28px;
+  color: #053749;
+  line-height: 2;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+footer .sponsors-section ul {
+  max-width: 1080px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+footer .sponsors-section ul li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
+footer .sponsors-section ul li img {
+  width: 150px;
+  height: auto;
+  padding: 20px 10px;
+}
 footer .container {
   margin: 0 auto;
   padding: 50px;
 }
+footer .container .social-media {
+  padding: 10px 0;
+}
+footer .container .social-media a i {
+  color: #F4BC48;
+  font-size: 36px;
+  padding: 0 5px;
+}
 footer .container .title {
   text-align: center;
   font-size: 18px;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 footer .container .copyright {
   text-align: center;
   font-size: 14px;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 .footer-brand {
