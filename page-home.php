@@ -1,6 +1,6 @@
-<?php get_header(); /* Template Name: Standard Page */ ?>
+<?php get_header(); /* Template Name: Home Page */ ?>
 
-  <div id="page-standard">
+  <div id="page-home">
      
     <div class="container">
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
@@ -9,5 +9,5 @@
       <?php endif; ?>
     </div> <!-- /.container -->
   
-  </div>  <!-- / #page-standard -->
+  </div>  <!-- / #page-home -->
 <?php get_footer(); ?>

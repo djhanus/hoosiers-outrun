@@ -69,21 +69,27 @@ table {
 
 html,
 body {
-  font-family: Arial, sans;
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif;
   background: #FFFFFF;
   height: auto;
   line-height: 1.2;
 }
 html p,
 body p {
-  font-size: 16px;
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.8;
   color: black;
   padding-bottom: 20px;
 }
 html h1,
 body h1 {
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 800;
   font-size: 32px;
   margin: 15px 0px;
   color: black;
@@ -91,6 +97,9 @@ body h1 {
 }
 html h2,
 body h2 {
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 800;
   font-size: 28px;
   margin: 15px 0px;
   color: black;
@@ -98,6 +107,19 @@ body h2 {
 }
 html h3,
 body h3 {
+  font-family: "athelas", Georgia, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 15px 0px;
+  color: black;
+  font-weight: normal;
+}
+html h3,
+body h3 {
+  font-family: "athelas", Georgia, serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 22px;
   margin: 15px 0px;
   color: black;
@@ -153,15 +175,32 @@ html em,
 body em {
   font-style: italic;
 }
+html a,
+body a {
+  color: #EE5938;
+  text-decoration: none;
+}
 
 main {
   position: relative;
   background: white;
 }
 
-.container {
-  width: 100%;
-  margin: 0 auto;
+.cta-button {
+  background-color: #EE5938;
+  padding: 5px 20px;
+  border-radius: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+.cta-button a {
+  color: white;
+}
+.cta-button:hover {
+  color: #EE5938;
+  background-color: white;
 }
 
 header {
@@ -169,9 +208,10 @@ header {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  background: #FFFFFF;
+  background: #F2E5CB;
   width: 100%;
   height: 150px;
+  border-bottom: 2px solid #5CC2B4;
 }
 header .container {
   position: relative;
@@ -179,7 +219,7 @@ header .container {
   align-items: center;
 }
 header img {
-  width: 300px;
+  width: 200px;
   height: auto;
   padding: 15px 10px;
   margin: 0 0 0 25px;
@@ -189,21 +229,148 @@ header .main-menu {
 }
 header .main-menu ul {
   display: inline-flex;
-  margin-right: 25px;
+  margin-right: 20px;
 }
 header .main-menu ul li a {
-  position: relative;
-  font-size: 18px;
-  font-family: Arial, sans;
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+  font-style: normal;
   font-weight: 500;
-  color: black;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  color: #03374A;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 5px 15px;
+  padding: 5px;
   margin: 0px 5px;
 }
 header .main-menu ul li a:hover {
-  color: blue;
+  color: #EE5938;
+}
+
+#page-standard .intro-section {
+  width: 100%;
+  background-color: #F2E5CB;
+  padding: 50px;
+  overflow: auto;
+}
+#page-standard .intro-section .photo {
+  float: left;
+  width: 50%;
+}
+#page-standard .intro-section .photo img {
+  display: block;
+  border-radius: 100% 100% 100% 100%;
+  overflow: hidden;
+  width: 100%;
+  max-width: 425px;
+  padding: 15px;
+  margin: 0 auto;
+}
+#page-standard .intro-section .text {
+  float: right;
+  width: 50%;
+}
+#page-standard .intro-section .text h1 {
+  font-size: 42px;
+  color: #03374A;
+}
+#page-standard .intro-section .text p {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 500px;
+}
+#page-standard .cta-section {
+  width: 100%;
+  background-color: #5CC2B4;
+  padding: 100px 50px;
+  color: white;
+  overflow: auto;
+}
+#page-standard .cta-section .container {
+  width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+#page-standard .cta-section .container h1, #page-standard .cta-section .container h2, #page-standard .cta-section .container h3, #page-standard .cta-section .container h4, #page-standard .cta-section .container h5 {
+  color: white;
+  text-align: center;
+}
+#page-standard .cta-section .container p {
+  color: white;
+  text-align: center;
+}
+#page-standard .main-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 50px;
+}
+#page-standard .closing-cta-section {
+  width: 100%;
+  background-color: white;
+  padding: 100px 50px;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  overflow: auto;
+  min-height: 450px;
+}
+#page-standard .closing-cta-section .container {
+  width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+#page-standard .closing-cta-section .container .title {
+  font-size: 36px;
+  color: white;
+  text-align: center;
+  display: block;
+  padding: 15px 0;
+}
+
+footer {
+  background-color: #053749;
+  height: auto;
+  text-align: center;
+  color: white;
+}
+footer .container {
+  margin: 0 auto;
+  padding: 50px;
+}
+footer .container .title {
+  text-align: center;
+  font-size: 18px;
+  padding: 15px 0;
+}
+footer .container .copyright {
+  text-align: center;
+  font-size: 14px;
+  padding: 15px 0;
+}
+
+.footer-brand {
+  width: 100%;
+  height: 10px;
+  display: block;
+}
+.footer-brand .item {
+  width: 25%;
+  height: 10px;
+  float: left;
+}
+.footer-brand .item:nth-child(1) {
+  background: #EEE1C7;
+}
+.footer-brand .item:nth-child(2) {
+  background: #D35747;
+}
+.footer-brand .item:nth-child(3) {
+  background: #EAB451;
+}
+.footer-brand .item:nth-child(4) {
+  background: #6DBFB1;
 }
 
 /*# sourceMappingURL=style.css.map */
