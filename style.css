@@ -210,10 +210,10 @@ header {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  background: #F2E5CB;
+  background: white;
   width: 100%;
   height: 150px;
-  border-bottom: 2px solid #5CC2B4;
+  border-bottom: 5px solid #5CC2B4;
 }
 header .container {
   position: relative;
@@ -234,6 +234,17 @@ header .main-menu-container ul {
   display: inline-flex;
   margin-right: 25px;
 }
+header .main-menu-container ul li {
+  padding: 5px 0px;
+}
+header .main-menu-container ul li:last-child {
+  background-color: #EE5938;
+  border-radius: 17px;
+  padding: 5px 7px;
+}
+header .main-menu-container ul li:last-child a {
+  color: white;
+}
 header .main-menu-container ul li a {
   font-family: "Gotham A", "Gotham B", Arial, sans-serif;
   font-style: normal;
@@ -241,14 +252,94 @@ header .main-menu-container ul li a {
   position: relative;
   font-size: 16px;
   font-weight: 500;
-  color: #03374A;
+  color: #EE5938;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 5px;
-  margin: 0px 5px;
+  margin: 0 15px;
+  line-height: 1;
 }
 header .main-menu-container ul li a:hover {
-  color: #EE5938;
+  color: #053749;
+}
+
+#page-home .featured-section {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  overflow: auto;
+  padding: 150px 75px;
+}
+#page-home .featured-section:before {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(25, 25, 25, 0.3);
+}
+#page-home .featured-section h1, #page-home .featured-section h2, #page-home .featured-section h3, #page-home .featured-section h4, #page-home .featured-section p {
+  position: relative;
+  color: #FFFFFF;
+  z-index: 1000;
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+#page-home .featured-section p {
+  font-size: 24px;
+  line-height: 1.4;
+}
+#page-home .main-container {
+  background-color: #FFFFFF;
+  overflow: auto;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 50px;
+}
+#page-home .race-day {
+  overflow: auto;
+  background-color: #F2E5CB;
+  padding: 50px;
+  text-align: center;
+}
+#page-home .race-day .date {
+  font-size: 48px;
+  text-align: center;
+  padding: 20px 0px;
+}
+#page-home .announcements-section {
+  background-color: #5CC2B4;
+  overflow: auto;
+  padding: 50px;
+}
+#page-home .gallery-section {
+  overflow: auto;
+  min-height: 500px;
+  background-color: white;
+  padding: 25px;
+}
+#page-home .gallery-section h2 {
+  text-align: center;
+}
+#page-home .gallery-section ul {
+  max-width: 1020px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+#page-home .gallery-section ul li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
+#page-home .gallery-section ul li img {
+  width: 200px;
+  height: auto;
+  padding: 10px;
 }
 
 #page-standard .intro-section {
@@ -357,13 +448,6 @@ footer .sponsors-section {
   overflow: auto;
   padding: 25px;
 }
-footer .sponsors-section .title {
-  font-size: 28px;
-  color: #053749;
-  line-height: 2;
-  font-weight: bold;
-  padding-bottom: 15px;
-}
 footer .sponsors-section ul {
   max-width: 1080px;
   flex-wrap: wrap;
@@ -385,7 +469,7 @@ footer .container {
   padding: 50px;
 }
 footer .container .social-media {
-  padding: 10px 0;
+  padding: 25px 0;
 }
 footer .container .social-media a i {
   color: #F4BC48;
@@ -394,7 +478,7 @@ footer .container .social-media a i {
 }
 footer .container .title {
   text-align: center;
-  font-size: 18px;
+  font-size: 24px;
   padding: 10px 0;
 }
 footer .container .copyright {

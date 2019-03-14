@@ -2,7 +2,7 @@
   <footer>
     <div class="sponsors-section">
 
-      <div class="title">Our Sponsors</div>
+      <h3>Our Sponsors</h3>
       <?php 
         $images = get_field('sponsors', 'options');
         $size = 'medium'; // (thumbnail, medium, large, full or custom size)
