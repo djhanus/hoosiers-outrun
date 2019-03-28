@@ -13,6 +13,12 @@
       <?php endif; ?>
     </div> <!-- /.main-container -->
 
+    <div class="video-section">
+      <div class="embed-container">
+        <?php the_field('featured_video'); ?>
+      </div>
+    </div>
+
     <div class="race-day">
     	<h4>Hoosiers Outrun Cancer - Race Day:</h4>
     	<div class="date">
@@ -23,6 +29,8 @@
     <div class="announcements-section">
     	<?php echo get_field('important_info'); ?>
     </div>
+
+
 
     <div class="gallery-section">
     	<h2><?php echo get_field('gallery_title'); ?></h2>
