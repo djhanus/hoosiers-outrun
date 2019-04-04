@@ -20,10 +20,14 @@
     </div>
 
     <div class="race-day">
+      
     	<h4>Hoosiers Outrun Cancer - Race Day:</h4>
     	<div class="date">
     		<?php echo get_field('race_day'); ?>
     	</div>
+
+      <?php the_field('countdown_timer'); ?>
+
     </div>
 
     <div class="announcements-section">

@@ -1,7 +1,6 @@
 /*
  Theme Name:   Hoosiers Outrun Cancer
  Theme URI:    local
- Description:  wordpress theme for HOC
  Author:       BLUELINE
  Author URI:   https://thisisblueline.com
  Version:      1.0.0
@@ -130,6 +129,7 @@ body ul,
 body ol {
   margin: 10px 25px;
   color: black;
+  list-style: disc;
 }
 html ul li, html ol li,
 body ul li,
@@ -161,11 +161,16 @@ body img.aligncenter {
   height: auto;
   max-width: 860px;
 }
+html .size-full,
+body .size-full {
+  max-width: 860px;
+  height: auto;
+}
 html blockquote,
 body blockquote {
   padding: 25px 30px;
   margin: 15px;
-  font-style: italic;
+  background-color: #f0f0f0;
 }
 html strong,
 body strong {
@@ -188,7 +193,7 @@ main {
 
 .cta-button {
   background-color: #EE5938;
-  padding: 5px 35px;
+  padding: 5px 25px;
   border-radius: 17px;
   color: white;
   line-height: 2;
@@ -196,6 +201,9 @@ main {
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 0.05em;
+  display: block;
+  max-width: 275px;
+  margin: 0 auto;
 }
 .cta-button a {
   color: white;
@@ -253,6 +261,7 @@ header .main-menu-container {
 header .main-menu-container ul {
   display: inline-flex;
   margin-right: 25px;
+  list-style: none;
 }
 header .main-menu-container ul li {
   padding: 5px 0px;
@@ -590,6 +599,397 @@ footer .container .copyright {
 }
 .footer-brand .item:nth-child(4) {
   background: #6DBFB1;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  html .size-full, body .size-full {
+    max-width: 680px;
+  }
+
+  #page-standard .contained {
+    max-width: 1024px;
+  }
+  #page-standard .intro-section {
+    width: 100%;
+    padding: 20px;
+  }
+  #page-standard .intro-section .photo-container {
+    float: left;
+    width: 35%;
+  }
+  #page-standard .intro-section .photo-container .photo {
+    width: 250px;
+    height: 250px;
+  }
+  #page-standard .intro-section .text-container {
+    float: right;
+    width: 60%;
+  }
+  #page-standard .intro-section .text-container p {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  #page-standard .cta-section {
+    width: 100%;
+    padding: 75px 25px;
+  }
+  #page-standard .cta-section .container {
+    width: 680px;
+  }
+  #page-standard .main-container {
+    width: 100%;
+    max-width: 720px;
+    padding: 25px;
+  }
+  #page-standard .main-container .text-header {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+  #page-standard .main-container .text {
+    padding: 25px;
+    line-height: 1.5;
+  }
+  #page-standard .sponsors-section ul {
+    max-width: 720px;
+  }
+  #page-standard .sponsors-section ul li img {
+    width: 125px;
+  }
+  #page-standard .sponsors-list {
+    max-width: 720px;
+  }
+  #page-standard .sponsors-list ul li {
+    font-size: 16px;
+  }
+  #page-standard .closing-cta-section {
+    padding: 25px;
+    background-position: center;
+    min-height: 400px;
+  }
+  #page-standard .closing-cta-section .container {
+    width: 680px;
+  }
+  #page-standard .closing-cta-section .container .title {
+    font-size: 38px;
+  }
+
+  #page-home .featured-section {
+    padding: 125px 50px;
+  }
+  #page-home .featured-section p {
+    font-size: 22px;
+  }
+  #page-home .main-container {
+    max-width: 960px;
+  }
+  #page-home .video-section {
+    max-width: 720px;
+  }
+  #page-home .announcements-section {
+    padding: 25px;
+  }
+  #page-home .gallery-section h2 {
+    text-align: center;
+  }
+  #page-home .gallery-section ul {
+    max-width: 1020px;
+  }
+  #page-home .gallery-section ul li img {
+    width: 175px;
+    height: auto;
+    padding: 10px;
+  }
+
+  footer .container {
+    padding: 25px;
+  }
+
+  .sponsors-footer ul {
+    max-width: 720px;
+  }
+  .sponsors-footer ul li img {
+    width: 125px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  html .size-full, body .size-full {
+    max-width: 440px;
+  }
+  html img.aligncenter, body img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+    height: auto;
+    max-width: 350px;
+  }
+
+  #page-standard .contained {
+    max-width: 720px;
+  }
+  #page-standard .intro-section {
+    padding: 25px;
+  }
+  #page-standard .intro-section .photo-container {
+    float: left;
+    width: 100%;
+  }
+  #page-standard .intro-section .photo-container .photo {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+  #page-standard .intro-section .text-container {
+    float: right;
+    width: 100%;
+  }
+  #page-standard .intro-section .text-container h1 {
+    text-align: center;
+  }
+  #page-standard .intro-section .text-container p {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  #page-standard .cta-section {
+    width: 100%;
+    padding: 50px 25px;
+  }
+  #page-standard .cta-section .container {
+    width: 440px;
+  }
+  #page-standard .cta-section .container h2 {
+    font-size: 28px;
+  }
+  #page-standard .cta-section .container p {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  #page-standard .main-container {
+    width: 100%;
+    max-width: 680px;
+    padding: 25px;
+  }
+  #page-standard .main-container .text-header {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+  #page-standard .main-container .text {
+    padding: 25px;
+    line-height: 1.5;
+  }
+  #page-standard .sponsors-section ul {
+    max-width: 720px;
+  }
+  #page-standard .sponsors-section ul li img {
+    width: 125px;
+  }
+  #page-standard .sponsors-list {
+    max-width: 720px;
+  }
+  #page-standard .sponsors-list ul li {
+    font-size: 16px;
+  }
+  #page-standard .closing-cta-section {
+    padding: 25px;
+    background-position: center;
+    min-height: 300px;
+  }
+  #page-standard .closing-cta-section .container {
+    width: 440px;
+    padding-top: 50px;
+  }
+  #page-standard .closing-cta-section .container .title {
+    font-size: 32px;
+  }
+
+  #page-home .featured-section {
+    padding: 75px 25px;
+  }
+  #page-home .featured-section p {
+    font-size: 20px;
+  }
+  #page-home .main-container {
+    max-width: 720px;
+    padding: 25px;
+  }
+  #page-home .video-section {
+    max-width: 450px;
+  }
+  #page-home .race-day {
+    padding: 25px;
+  }
+  #page-home .announcements-section {
+    padding: 25px;
+  }
+  #page-home .gallery-section h2 {
+    text-align: center;
+  }
+  #page-home .gallery-section ul {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  #page-home .gallery-section ul li img {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .sponsors-footer ul {
+    max-width: 440px;
+  }
+  .sponsors-footer ul li img {
+    width: 100px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  html .size-full, body .size-full {
+    max-width: 275px;
+  }
+  html img.aligncenter, body img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+    height: auto;
+    max-width: 240px;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+
+  #page-standard .contained {
+    max-width: 460px;
+  }
+  #page-standard .intro-section {
+    padding: 25px;
+  }
+  #page-standard .intro-section .photo-container {
+    float: left;
+    width: 100%;
+  }
+  #page-standard .intro-section .photo-container .photo {
+    width: 225px;
+    height: 225px;
+    margin: 0 auto;
+  }
+  #page-standard .intro-section .text-container {
+    float: right;
+    width: 100%;
+  }
+  #page-standard .intro-section .text-container h1 {
+    text-align: center;
+  }
+  #page-standard .intro-section .text-container p {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  #page-standard .cta-section {
+    width: 100%;
+    padding: 50px 25px;
+  }
+  #page-standard .cta-section .container {
+    width: 280px;
+  }
+  #page-standard .cta-section .container h2 {
+    font-size: 28px;
+  }
+  #page-standard .cta-section .container p {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  #page-standard .main-container {
+    width: 100%;
+    max-width: 320px;
+    padding: 25px;
+  }
+  #page-standard .main-container p {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  #page-standard .main-container .text-header {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+  #page-standard .main-container .text {
+    padding: 25px;
+    line-height: 1.5;
+  }
+  #page-standard .sponsors-section ul {
+    max-width: 720px;
+  }
+  #page-standard .sponsors-section ul li img {
+    width: 125px;
+  }
+  #page-standard .sponsors-list {
+    max-width: 720px;
+  }
+  #page-standard .sponsors-list ul li {
+    font-size: 16px;
+  }
+  #page-standard .closing-cta-section {
+    padding: 25px;
+    background-position: center;
+    min-height: 300px;
+  }
+  #page-standard .closing-cta-section .container {
+    width: 280px;
+    padding-top: 50px;
+  }
+  #page-standard .closing-cta-section .container .title {
+    font-size: 32px;
+  }
+
+  #page-home .featured-section {
+    padding: 25px;
+  }
+  #page-home .featured-section h1 {
+    font-size: 32px;
+  }
+  #page-home .featured-section p {
+    font-size: 18px;
+  }
+  #page-home .main-container {
+    max-width: 720px;
+    padding: 25px;
+  }
+  #page-home .main-container p {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  #page-home .video-section {
+    max-width: 320px;
+  }
+  #page-home .gallery-section h2 {
+    text-align: center;
+  }
+  #page-home .gallery-section ul {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  #page-home .gallery-section ul li img {
+    width: 130px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .sponsors-footer {
+    padding: 25px 10px;
+  }
+  .sponsors-footer ul {
+    max-width: 320px;
+  }
+  .sponsors-footer ul li img {
+    width: 120px;
+    padding: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

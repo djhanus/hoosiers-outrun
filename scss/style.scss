@@ -1,7 +1,6 @@
 /*
  Theme Name:   Hoosiers Outrun Cancer
  Theme URI:    local
- Description:  wordpress theme for HOC
  Author:       BLUELINE
  Author URI:   https://thisisblueline.com
  Version:      1.0.0
@@ -144,6 +143,7 @@ body {
   ul, ol {
     margin: 10px 25px;
     color: black;
+    list-style: disc;
 
     li {
       padding-bottom: 10px;
@@ -175,10 +175,15 @@ body {
     max-width: 860px;
   }
 
+  .size-full { max-width: 860px; height: auto;}
+  .size-large {}
+  .size-medium {}
+  .size-thumbnail {}
+
   blockquote {
     padding: 25px 30px;
     margin: 15px;
-    font-style: italic;
+    background-color: rgb(240,240,240);
   }
 
   strong {
@@ -203,7 +208,7 @@ main {
 // CTA BUTTON
 .cta-button {
   background-color: $red;
-  padding: 5px 35px;
+  padding: 5px 25px;
   border-radius: 17px;
   color: white;
   line-height: 2;
@@ -211,6 +216,9 @@ main {
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 0.05em;
+  display: block;
+  max-width: 275px;
+  margin: 0 auto;
   a {
     color: white;
   }
@@ -274,6 +282,7 @@ header {
     ul {
       display: inline-flex;
       margin-right: 25px;
+      list-style: none;
 
       li {
         padding: 5px 0px;
@@ -691,6 +700,168 @@ footer {
 // ----------------------------------------------- //
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
+  // GLOBAL
+  html, body {
+    .size-full { max-width: 680px;}
+  }
+
+  #page-standard {
+
+    .contained {
+      max-width: 1024px;
+    }
+
+    .intro-section {
+      width: 100%;
+      padding: 20px;
+
+      .photo-container {
+        float: left;
+        width: 35%;
+
+        .photo {
+          width: 250px;
+          height: 250px;
+        }
+      }
+
+      .text-container {
+        float: right;
+        width: 60%;
+
+        p {
+          line-height: 1.6;
+          font-size: 16px;
+        }
+      }
+    } // end intro
+
+    .cta-section {
+      width: 100%;
+      padding: 75px 25px;
+
+      .container {
+        width: 680px;
+      }
+    } // end cta
+
+    .main-container {
+      width: 100%;
+      max-width: 720px;
+      padding: 25px;
+
+      // class imported from FAQ page
+      .text-header {
+        font-size: 18px;
+        color: black;
+        font-weight: bold;
+        padding-bottom: 15px;
+      }
+
+      // class for DD objects
+      .text {
+        padding: 25px;
+        line-height: 1.5;
+      }
+    }
+
+    .sponsors-section {
+      ul {
+        max-width: 720px;
+        li {
+          img {
+            width: 125px;
+          }
+        }
+      }
+    }
+
+    .sponsors-list {
+      max-width: 720px;
+
+      ul {
+        li {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .closing-cta-section {
+      padding: 25px;
+      background-position: center;
+      min-height: 400px;
+
+      .container {
+        width: 680px;
+
+        .title {
+          font-size: 38px;
+        }
+      }
+    } // end cta
+  } // end page-standard
+
+  // PAGE HOME
+  #page-home {
+    .featured-section {
+      padding: 125px 50px;
+      p {
+        font-size: 22px;
+      }
+    }
+
+    .main-container {
+      max-width: 960px;
+    }
+
+    .video-section {
+      max-width: 720px;
+    }
+
+    .announcements-section {
+      padding: 25px;
+    }
+
+    .gallery-section {
+      h2 {
+        text-align: center;
+      }
+      ul {
+        max-width: 1020px;
+        li {
+          img {
+            width: 175px;
+            height: auto;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  } // end home
+
+
+
+  // FOOTER
+  footer {
+    .container {
+      padding: 25px;
+    }
+  } // END footer
+
+  .sponsors-footer {
+
+    ul {
+      max-width: 720px;
+
+      li {
+        img {
+          width: 125px;
+        }
+      }
+    }
+  }
+
 } // END tablet
 
 
@@ -699,6 +870,192 @@ footer {
 // ----------------------------------------------- //
 
 @media (min-width: 481px) and (max-width: 767px) {
+
+  // GLOBAL
+  html, body {
+    .size-full {
+      max-width: 440px;
+    }
+
+    img.aligncenter {
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      clear: both;
+      height: auto;
+      max-width: 350px;
+    }
+  }
+
+
+
+  #page-standard {
+
+    .contained {
+      max-width: 720px;
+    }
+
+    .intro-section {
+      padding: 25px;
+
+      .photo-container {
+        float: left;
+        width: 100%;
+
+        .photo {
+          width: 250px;
+          height: 250px;
+          margin: 0 auto;
+        }
+      }
+
+      .text-container {
+        float: right;
+        width: 100%;
+
+        h1 {
+          text-align: center;
+        }
+
+        p {
+          line-height: 1.6;
+          font-size: 16px;
+        }
+      }
+    } // end intro
+
+    .cta-section {
+      width: 100%;
+      padding: 50px 25px;
+
+      .container {
+        width: 440px;
+
+        h2 {
+          font-size: 28px;
+        }
+
+        p {
+          line-height: 1.6;
+          font-size: 16px;
+        }
+      }
+    } // end cta
+
+    .main-container {
+      width: 100%;
+      max-width: 680px;
+      padding: 25px;
+
+      // class imported from FAQ page
+      .text-header {
+        font-size: 18px;
+        color: black;
+        font-weight: bold;
+        padding-bottom: 15px;
+      }
+
+      // class for DD objects
+      .text {
+        padding: 25px;
+        line-height: 1.5;
+      }
+    }
+
+    .sponsors-section {
+      ul {
+        max-width: 720px;
+        li {
+          img {
+            width: 125px;
+          }
+        }
+      }
+    }
+
+    .sponsors-list {
+      max-width: 720px;
+
+      ul {
+        li {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .closing-cta-section {
+      padding: 25px;
+      background-position: center;
+      min-height: 300px;
+
+      .container {
+        width: 440px;
+        padding-top: 50px;
+
+        .title {
+          font-size: 32px;
+        }
+      }
+    } // end cta
+  } // end page-standard
+
+  // PAGE HOME
+  #page-home {
+    .featured-section {
+      padding: 75px 25px;
+      p {
+        font-size: 20px;
+      }
+    }
+
+    .main-container {
+      max-width: 720px;
+      padding: 25px;
+    }
+
+    .video-section {
+      max-width: 450px;
+    }
+
+    .race-day {
+      padding: 25px;
+    }
+
+    .announcements-section {
+      padding: 25px;
+    }
+
+    .gallery-section {
+      h2 {
+        text-align: center;
+      }
+      ul {
+        max-width: 420px;
+        margin: 0 auto;
+        li {
+          img {
+            width: 200px;
+            height: auto;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  } // end home
+
+  .sponsors-footer {
+
+    ul {
+      max-width: 440px;
+
+      li {
+        img {
+          width: 100px;
+        }
+      }
+    }
+  }
+
 } // END medium
 
 
@@ -707,4 +1064,199 @@ footer {
 // ----------------------------------------------- //
 
 @media (min-width: 320px) and (max-width: 480px) {
+
+  // GLOBAL
+  html, body {
+    .size-full {
+      max-width: 275px;
+    }
+    img.aligncenter {
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      clear: both;
+      height: auto;
+      max-width: 240px;
+    }
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+
+  #page-standard {
+
+    .contained {
+      max-width: 460px;
+    }
+
+    .intro-section {
+      padding: 25px;
+
+      .photo-container {
+        float: left;
+        width: 100%;
+
+        .photo {
+          width: 225px;
+          height: 225px;
+          margin: 0 auto;
+        }
+      }
+
+      .text-container {
+        float: right;
+        width: 100%;
+
+        h1 {
+          text-align: center;
+        }
+
+        p {
+          line-height: 1.6;
+          font-size: 16px;
+        }
+      }
+    } // end intro
+
+    .cta-section {
+      width: 100%;
+      padding: 50px 25px;
+
+      .container {
+        width: 280px;
+
+        h2 {
+          font-size: 28px;
+        }
+
+        p {
+          line-height: 1.6;
+          font-size: 16px;
+        }
+      }
+    } // end cta
+
+    .main-container {
+      width: 100%;
+      max-width: 320px;
+      padding: 25px;
+
+      p {
+        line-height: 1.6;
+        font-size: 16px;
+      }
+
+      // class imported from FAQ page
+      .text-header {
+        font-size: 18px;
+        color: black;
+        font-weight: bold;
+        padding-bottom: 15px;
+      }
+
+      // class for DD objects
+      .text {
+        padding: 25px;
+        line-height: 1.5;
+      }
+    }
+
+    .sponsors-section {
+      ul {
+        max-width: 720px;
+        li {
+          img {
+            width: 125px;
+          }
+        }
+      }
+    }
+
+    .sponsors-list {
+      max-width: 720px;
+
+      ul {
+        li {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .closing-cta-section {
+      padding: 25px;
+      background-position: center;
+      min-height: 300px;
+
+      .container {
+        width: 280px;
+        padding-top: 50px;
+
+        .title {
+          font-size: 32px;
+        }
+      }
+    } // end cta
+  } // end page-standard
+
+  // PAGE HOME
+  #page-home {
+    .featured-section {
+      padding: 25px;
+      h1 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .main-container {
+      max-width: 720px;
+      padding: 25px;
+
+      p {
+        line-height: 1.6;
+        font-size: 16px;
+      }
+    }
+
+    .video-section {
+      max-width: 320px;
+    }
+
+    .gallery-section {
+      h2 {
+        text-align: center;
+      }
+      ul {
+        max-width: 320px;
+        margin: 0 auto;
+        li {
+          img {
+            width: 130px;
+            height: auto;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  } // end home
+
+  .sponsors-footer {
+    padding: 25px 10px;
+
+    ul {
+      max-width: 320px;
+
+      li {
+        img {
+          width: 120px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+
 } // END phone
