@@ -286,6 +286,7 @@ header {
 
       li {
         padding: 5px 0px;
+        white-space: nowrap;
 
         &:last-child {
           background-color: $red;
@@ -301,12 +302,12 @@ header {
           font-style: normal;
           font-weight: 500;
           position: relative;
-          font-size: 16px;
+          font-size: 15px;
           font-weight: 500;
           color: $red;
           text-transform: uppercase;
           text-decoration: none;
-          margin: 0 15px;
+          margin: 0 12px;
           line-height: 1;
 
           &:hover {
@@ -406,14 +407,15 @@ header {
 
     ul {
       li {
-        margin: 10px 0 10px 0;
+        margin: 8px 0 8px 0;
         list-style: none;
 
         a {
           text-transform: uppercase;
           color: $navy;
-          font-size: 24px;
+          font-size: 22px;
           font-weight: 800;
+          line-height: 1;
         }
       }
     }
@@ -821,7 +823,7 @@ footer {
   header {
     .container {
       img {
-        width: 180px;
+        width: 160px;
         padding: 10px 5px;
         margin: 0 0 0 15px;
       }

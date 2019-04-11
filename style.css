@@ -265,6 +265,7 @@ header .main-menu-container ul {
 }
 header .main-menu-container ul li {
   padding: 5px 0px;
+  white-space: nowrap;
 }
 header .main-menu-container ul li:last-child {
   background-color: #EE5938;
@@ -279,12 +280,12 @@ header .main-menu-container ul li a {
   font-style: normal;
   font-weight: 500;
   position: relative;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   color: #EE5938;
   text-transform: uppercase;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 12px;
   line-height: 1;
 }
 header .main-menu-container ul li a:hover {
@@ -388,14 +389,15 @@ header .mobile-menu-wrapper {
   margin-top: 150px;
 }
 header .mobile-menu-wrapper ul li {
-  margin: 10px 0 10px 0;
+  margin: 8px 0 8px 0;
   list-style: none;
 }
 header .mobile-menu-wrapper ul li a {
   text-transform: uppercase;
   color: #053749;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 800;
+  line-height: 1;
 }
 header .mobile-menu-wrapper .socials {
   width: 100%;
@@ -730,7 +732,7 @@ footer .container .copyright {
 
 @media (min-width: 1024px) and (max-width: 1200px) {
   header .container img {
-    width: 180px;
+    width: 160px;
     padding: 10px 5px;
     margin: 0 0 0 15px;
   }
