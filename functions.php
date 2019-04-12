@@ -6,7 +6,6 @@ function enqueue_parent_styles() {
   wp_enqueue_script('toggle-script',  get_stylesheet_directory_uri() .'/js/toggle-faq.js', false, null, true);
   wp_enqueue_script('jquery-script', 'https://code.jquery.com/jquery-3.3.1.min.js', false, null, true);
   wp_enqueue_script('burger-script',  get_stylesheet_directory_uri() .'/js/burger.js', false, null, true);
-
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
 
