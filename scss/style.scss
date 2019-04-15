@@ -88,6 +88,7 @@ body {
   background: #FFFFFF;
   height: auto;
   line-height: 1.2;
+  z-index: 1;
 
   p {
     font-family: $main-sans;
@@ -203,6 +204,7 @@ body {
 main {
   position: relative;
   background: white;
+  z-index: 1;
 }
 
 // CTA BUTTON
@@ -229,7 +231,6 @@ main {
 }
 
 // ACF OEMBED
-
 .embed-container { 
   position: relative; 
   padding-bottom: 56.25%;
@@ -257,8 +258,6 @@ header {
   background: white;
   width: 100%;
   min-height: 150px;
-  height: auto;
-  overflow: hidden;
   border-bottom: 5px solid $green;
 
   .container {
@@ -269,10 +268,10 @@ header {
 
     // LOGO
     img {
-      width: 200px;
+      width: 150px;
       height: auto;
-      padding: 15px 10px;
-      margin: 0 0 0 25px;
+      padding: 15px 5px;
+      margin: 0 0 0 15px;
     }
   }
 
@@ -283,6 +282,7 @@ header {
       display: inline-flex;
       margin-right: 25px;
       list-style: none;
+      margin-left: 0px;
 
       li {
         padding: 5px 0px;
@@ -291,7 +291,7 @@ header {
         &:last-child {
           background-color: $red;
           border-radius: 17px;
-          padding: 5px 7px;
+          padding: 5px 5px;
           a {
             color: white;
           }
@@ -307,7 +307,7 @@ header {
           color: $red;
           text-transform: uppercase;
           text-decoration: none;
-          margin: 0 12px;
+          margin: 0 10px;
           line-height: 1;
 
           &:hover {
@@ -328,7 +328,7 @@ header {
     height: 26px;
     cursor: pointer;
 
-    @media(min-width: 1024px) {
+    @media(min-width: 1084px) {
       display: none;
     }
 
@@ -441,6 +441,7 @@ header {
 // PAGE HOME
 #page-home {
   padding-top: 150px;
+  z-index: 1;
 
   .featured-section {
     position: relative;
@@ -818,12 +819,12 @@ footer {
 }
 
 // MENU FIX
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (min-width: 1084px) and (max-width: 1200px) {
 
   header {
     .container {
       img {
-        width: 160px;
+        width: 150px;
         padding: 10px 5px;
         margin: 0 0 0 15px;
       }
@@ -853,7 +854,7 @@ footer {
 //                     TABLET                      //
 // ----------------------------------------------- //
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1084px) {
 
   // GLOBAL
   html, body {
@@ -872,7 +873,7 @@ footer {
   #page-standard {
 
     .contained {
-      max-width: 1024px;
+      max-width: 1084px;
     }
 
     .intro-section {

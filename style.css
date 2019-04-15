@@ -72,6 +72,7 @@ body {
   background: #FFFFFF;
   height: auto;
   line-height: 1.2;
+  z-index: 1;
 }
 html p,
 body p {
@@ -189,6 +190,7 @@ body a {
 main {
   position: relative;
   background: white;
+  z-index: 1;
 }
 
 .cta-button {
@@ -239,8 +241,6 @@ header {
   background: white;
   width: 100%;
   min-height: 150px;
-  height: auto;
-  overflow: hidden;
   border-bottom: 5px solid #5CC2B4;
 }
 header .container {
@@ -250,10 +250,10 @@ header .container {
   width: 100%;
 }
 header .container img {
-  width: 200px;
+  width: 150px;
   height: auto;
-  padding: 15px 10px;
-  margin: 0 0 0 25px;
+  padding: 15px 5px;
+  margin: 0 0 0 15px;
 }
 header .main-menu-container {
   margin-left: auto;
@@ -262,6 +262,7 @@ header .main-menu-container ul {
   display: inline-flex;
   margin-right: 25px;
   list-style: none;
+  margin-left: 0px;
 }
 header .main-menu-container ul li {
   padding: 5px 0px;
@@ -270,7 +271,7 @@ header .main-menu-container ul li {
 header .main-menu-container ul li:last-child {
   background-color: #EE5938;
   border-radius: 17px;
-  padding: 5px 7px;
+  padding: 5px 5px;
 }
 header .main-menu-container ul li:last-child a {
   color: white;
@@ -285,7 +286,7 @@ header .main-menu-container ul li a {
   color: #EE5938;
   text-transform: uppercase;
   text-decoration: none;
-  margin: 0 12px;
+  margin: 0 10px;
   line-height: 1;
 }
 header .main-menu-container ul li a:hover {
@@ -301,7 +302,7 @@ header .hamburger-wrapper {
   height: 26px;
   cursor: pointer;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1084px) {
   header .hamburger-wrapper {
     display: none;
   }
@@ -415,6 +416,7 @@ header .mobile-menu-wrapper .socials svg:first-of-type {
 
 #page-home {
   padding-top: 150px;
+  z-index: 1;
 }
 #page-home .featured-section {
   position: relative;
@@ -730,9 +732,9 @@ footer .container .copyright {
   background: #6DBFB1;
 }
 
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (min-width: 1084px) and (max-width: 1200px) {
   header .container img {
-    width: 160px;
+    width: 150px;
     padding: 10px 5px;
     margin: 0 0 0 15px;
   }
@@ -751,7 +753,7 @@ footer .container .copyright {
     margin: 0 10px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1084px) {
   html .size-full, body .size-full {
     max-width: 680px;
   }
@@ -761,7 +763,7 @@ footer .container .copyright {
   }
 
   #page-standard .contained {
-    max-width: 1024px;
+    max-width: 1084px;
   }
   #page-standard .intro-section {
     width: 100%;
