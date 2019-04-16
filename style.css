@@ -1022,17 +1022,17 @@ footer .container .copyright {
     min-height: 120px;
   }
   header .container img {
-    width: 180px;
+    width: 125px;
   }
   header .hamburger-wrapper {
-    top: 50px;
+    top: 40px;
     right: 35px;
   }
   header .main-menu-container ul {
     display: none;
   }
   header .mobile-menu-wrapper {
-    margin-top: 137px;
+    margin-top: 120px;
   }
 
   .cta-button {
