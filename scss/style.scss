@@ -638,82 +638,18 @@ header {
     }
   }
 
-  .sponsors-section-large {
-    background-color: white;
-    overflow: auto;
-    padding: 25px;
-    text-align: center;
+  .sponsors-logos {
 
-    ul {
-      max-width: 1080px;
-      flex-wrap: wrap;
+    img {
+      width: 100%;
+      max-width: 960px;
+      height: auto;
+      padding: 25px 0px;
       margin: 0 auto;
-
-      li {
-        display: inline-block;
-        vertical-align: middle;
-        padding: 0;
-        margin: 0;
-
-        img {
-          width: 275px;
-          height: auto;
-          padding: 20px 10px;
-        }
-      }
+      display: block;
+      position: relative;
     }
-  }
 
-  .sponsors-section-medium {
-    background-color: white;
-    overflow: auto;
-    padding: 25px;
-    text-align: center;
-
-    ul {
-      max-width: 1080px;
-      flex-wrap: wrap;
-      margin: 0 auto;
-
-      li {
-        display: inline-block;
-        vertical-align: middle;
-        padding: 0;
-        margin: 0;
-
-        img {
-          width: 240px;
-          height: auto;
-          padding: 20px 10px;
-        }
-      }
-    }
-  }
-
-  .sponsors-section-small {
-    background-color: white;
-    overflow: auto;
-    padding: 25px;
-    text-align: center;
-
-    ul {
-      max-width: 1080px;
-      flex-wrap: wrap;
-      margin: 0 auto;
-
-      li {
-        display: inline-block;
-        vertical-align: middle;
-        padding: 0;
-        margin: 0;
-
-        img {
-          width: 175px;
-          height: auto;
-          padding: 20px 10px;
-        }
-      }
-    }
   }
 
   .sponsors-list {
@@ -986,39 +922,6 @@ footer {
       }
     }
 
-    .sponsors-section-large {
-      ul {
-        max-width: 720px;
-        li {
-          img {
-            width: 200px;
-          }
-        }
-      }
-    }
-
-    .sponsors-section-medium {
-      ul {
-        max-width: 720px;
-        li {
-          img {
-            width: 175px;
-          }
-        }
-      }
-    }
-
-    .sponsors-section-small {
-      ul {
-        max-width: 720px;
-        li {
-          img {
-            width: 125px;
-          }
-        }
-      }
-    }
-
     .sponsors-list {
       max-width: 720px;
 
@@ -1209,39 +1112,6 @@ footer {
       .text {
         padding: 25px;
         line-height: 1.5;
-      }
-    }
-
-    .sponsors-section-large {
-      ul {
-        max-width: 720px;
-        li {
-          img {
-            width: 200px;
-          }
-        }
-      }
-    }
-
-    .sponsors-section-medium {
-      ul {
-        max-width: 720px;
-        li {
-          img {
-            width: 175px;
-          }
-        }
-      }
-    }
-
-    .sponsors-section-small {
-      ul {
-        max-width: 720px;
-        li {
-          img {
-            width: 125px;
-          }
-        }
       }
     }
 
@@ -1459,39 +1329,6 @@ footer {
       .text {
         padding: 25px;
         line-height: 1.5;
-      }
-    }
-
-    .sponsors-section-large {
-      ul {
-        max-width: 720px;
-        li {
-          img {
-            width: 200px;
-          }
-        }
-      }
-    }
-
-    .sponsors-section-medium {
-      ul {
-        max-width: 720px;
-        li {
-          img {
-            width: 175px;
-          }
-        }
-      }
-    }
-
-    .sponsors-section-small {
-      ul {
-        max-width: 720px;
-        li {
-          img {
-            width: 125px;
-          }
-        }
       }
     }
 
