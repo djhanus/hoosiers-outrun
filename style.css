@@ -516,7 +516,7 @@ header .mobile-menu-wrapper .socials svg:first-of-type {
 #page-standard .intro-section {
   width: 100%;
   background-color: #F2E5CB;
-  padding: 50px;
+  padding: 20px;
   overflow: auto;
 }
 #page-standard .intro-section .photo-container {
@@ -524,13 +524,13 @@ header .mobile-menu-wrapper .socials svg:first-of-type {
   width: 50%;
 }
 #page-standard .intro-section .photo-container .photo {
-  width: 375px;
-  height: 375px;
+  width: 250px;
+  height: 250px;
   display: block;
   border-radius: 100% 100% 100% 100%;
   overflow: hidden;
   padding: 15px;
-  margin: 25px auto;
+  margin: 15px auto;
   background-size: cover;
   background-position: center;
 }
